@@ -17,8 +17,7 @@ Choosing the right architecture is tough:
 
 ## 📊 Dataset Used
 
-We use the Stack Overflow “stacksample” dataset
- from Kaggle.
+We use the Stack Overflow “stacksample” dataset from Kaggle.
 It contains:
 
 Questions.csv → Stack Overflow questions
@@ -55,7 +54,57 @@ Tags.csv → Question tags
 ---
 
 ## 🛠️ How to Run (Google Colab)
-1. Upload this project folder to Colab.  
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
+
+- **Step 1**: Upload Project  
+Upload this project folder to your Google Colab workspace.  
+
+## Step 2: Install Dependencies  
+```bash
+pip install -r requirements.txt
+```
+- **Step 3**: Add your API keys in a .env file (see .env.example for format).
+
+- **Step 4**: Run the notebook LLM_Powered_Cloud_Architecture_Recommendation_Engine.ipynb.
+
+- **Step 5**: It will download the Stack Overflow dataset automatically via the Kaggle API.
+
+- **Step 6**: A FAISS index and knowledge base (kb/) will be created during runtime.
+
+Once setup is complete, you can query the assistant with cloud/software architecture questions.
+
+---
+
+## 🚀 Example Usage
+
+# **Input:**
+
+What are the benefits of serverless architecture compared to microservices?
+
+
+# **Output (sample)**:
+
+- Lower operational overhead
+
+- Automatic scaling and cost efficiency
+
+- Best for event-driven workloads
+
+- Microservices give more control for large systems
+
+---
+
+## 📌 Notes
+
+This project is research-oriented and experimental.
+
+The recommendations are based on community knowledge + LLM reasoning, not official cloud vendor docs.
+
+---
+
+## 🙌 Acknowledgements
+
+Stack Overflow for dataset
+
+Hugging Face for open LLMs
+
+LangChain & FAISS for retrieval pipeline
