@@ -1,0 +1,40 @@
+patterns:
+  - name: Monolith
+    description: "Single deployable unit; simple ops; quick to iterate."
+    use_when:
+      - "Small team"
+      - "Tight timelines"
+    tech_stack:
+      conservative: ["Python", "FastAPI", "PostgreSQL", "Redis"]
+      balanced: ["Node.js", "Express", "Postgres", "Redis"]
+      innovative: ["Deno", "PlanetScale", "Upstash Redis"]
+
+  - name: Microservices
+    description: "Multiple services per bounded context; independent deploys."
+    use_when:
+      - "Large teams"
+      - "Need independent scaling"
+    tech_stack:
+      conservative: ["Java", "Spring Boot", "Postgres", "Kafka", "Kubernetes"]
+      balanced: ["Go", "gRPC", "Kafka", "MongoDB", "Kubernetes"]
+      innovative: ["Rust", "NATS", "CockroachDB", "Service Mesh"]
+
+  - name: Event-Driven
+    description: "Asynchronous comms using event bus; good for decoupling."
+    use_when:
+      - "High throughput"
+      - "Loose coupling needed"
+    tech_stack:
+      conservative: ["Java", "Spring Boot", "RabbitMQ", "Postgres"]
+      balanced: ["Python", "FastAPI", "Kafka", "MongoDB"]
+      innovative: ["Go", "NATS", "CockroachDB", "Serverless"]
+
+  - name: Serverless
+    description: "Functions as a service; pay-per-use; scales automatically."
+    use_when:
+      - "Unpredictable workloads"
+      - "Low ops overhead desired"
+    tech_stack:
+      conservative: ["AWS Lambda", "DynamoDB", "API Gateway"]
+      balanced: ["GCP Cloud Functions", "Firestore"]
+      innovative: ["Vercel Edge Functions", "PlanetScale"]

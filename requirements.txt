@@ -1,0 +1,10 @@
+pandas
+numpy
+tqdm
+python-dotenv
+langchain
+huggingface_hub
+sentence-transformers
+faiss-cpu
+pyyaml
+ipython
