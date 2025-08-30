@@ -58,7 +58,7 @@ Tags.csv → Question tags
 - **Step 1**: Upload Project  
 Upload this project folder to your Google Colab workspace.  
 
-## Step 2: Install Dependencies  
+- **Step 2**: Install Dependencies  
 ```bash
 pip install -r requirements.txt
 ```
@@ -108,3 +108,4 @@ Stack Overflow for dataset
 Hugging Face for open LLMs
 
 LangChain & FAISS for retrieval pipeline
+
